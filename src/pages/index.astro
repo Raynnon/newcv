@@ -1,11 +1,22 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <body>
+    <div class="bg-stone-800 h-screen px-28 columns-2">
+		<div>
+			<p class="text-stone-500 font-bold text-2xl">HELLO</p>
+    		<p class="text-white font-bold text-5xl">I'M FLORIAN</p>
+			<p class="text-stone-400 text-lg">Passionate about new technologies, I have general knowledge in IT and development. I am very interested in the field of new technologies and would like to share my transferable skills and strong adaptability.</p>
+		</div>
+		<div><img src="/src/assets/images/florian.png" alt="Florian Assante" /></div>
+		
+    </div>
+  </body>
 </Layout>
